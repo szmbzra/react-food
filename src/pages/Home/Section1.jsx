@@ -9,7 +9,7 @@ function Section1() {
 <Container>
     <Row>
         <Col lg={7} className="mb-5 mb-lg-0">
-        <div className="postion-relative">
+        <div className="position-relative">
             <img src={Burger}  className="img-fluid" alt="Hero" />
             <div className="price_badge">
                 <div className="badge_text">

@@ -4,7 +4,7 @@
     background: url("../assets/hero/hero-1.jpg") no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
-    padding-top: 170px 0;
+    padding-top: 170px;
     padding-bottom: 90px;
 
     .price_badge{
@@ -22,5 +22,40 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        .h4_xs{
+            font-size: 1.875rem;
+            font-weight: 600;
+            line-height: 1;
+        }
+        .h3_lg{
+            font-size: 2.875rem;
+            font-weight: 600;
+            line-height: 1;
+        }
     }
+    .hero_text h1{
+        font-family: var(--lilita-font);
+        font-size: 7rem;
+        line-height: 1;
+        margin-bottom: 15px;
+        letter-spacing: 3px;
+    }
+    .hero_text {
+        h2{
+        font-family: var(--lilita-font);
+        font-size:2.5rem;
+        line-height: 1;
+        margin-bottom: 20px;
+        letter-spacing: 3px;
+    }
+p{
+    padding: 0.5%;
+}
+}
+}
+
+@media (max-width:767px){
+.hero_section .hero_text h1{
+    font-size: 5.5rem;
+}
 }
