@@ -1,0 +1,26 @@
+/* hero */
+.hero_section{
+    position: relative;
+    background: url("../assets/hero/hero-1.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 170px 0;
+    padding-bottom: 90px;
+
+    .price_badge{
+        background: url("../assets/hero/price-badge-yellow.png") no-repeat center center;
+        background-size: cover;
+        position: absolute;
+        top: -20px;
+        right: 5px;
+        width: 180px;
+        height: 176px;
+        text-align: center;
+    }
+    .badge_text{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
