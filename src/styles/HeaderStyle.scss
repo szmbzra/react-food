@@ -1,0 +1,105 @@
+/* header css */
+@use '../index.scss' as *;
+
+header {
+    .navbar {
+        position: absolute;
+        width: 100%;
+        background: transparent;
+        z-index: 1000;
+        &.sticky {
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: $white;
+            transition: all 15ms ease-in-out;
+            animation-name: stickyTransition;
+            animation-duration: 0.5s;
+            animation-fill-mode: both;
+            box-shadow: 0 2px 3px rgba(96, 96, 96, 0.1);
+        }
+    }
+
+    .navbar-brand {
+        img {
+            width: auto;
+            max-width: inherit;
+            max-height: 80px !important;
+        }
+    }
+
+    .nav-link {
+        display: inline-flex;
+        justify-content: center;
+        color: $white;
+        padding: 0 1rem !important;
+        font-size: 1.125rem;
+        font-weight: 500;
+        font-family: $oswald-font;
+        text-transform: uppercase;
+        transition: all 15ms ease-in-out;
+        &:hover{
+            color: $yellow ;
+        }
+        
+    }
+
+    .sticky .nav-link{
+        color: $light-black;
+    }
+        .cart{
+            position: relative;
+            top: -0.4375rem;
+        }
+
+        .roundpoint{
+            width: 16px;
+            height: 16px;
+            background: $light-red;
+           border-radius: 50%;
+           color: $white;
+           font-size: 11.2px;
+           line-height: 16px;
+           text-align: center;
+           font-style: normal;
+           position: absolute;
+           top: 3.2px;
+           right: -8px;
+        }
+        @media (max-width:992px){
+           .navbar{
+            background: $white;
+           }
+           .navbar-toggler{
+            border: none;
+            &:focus{
+             outline: none;
+             box-shadow: none;
+         }
+         }
+         .navbar-toggler-icon{
+            width: 2.5rem;
+            height: 2.5rem;
+         }
+         .nav-link{
+            color: $light-black ;
+            padding: 1rem !important;
+         }
+          }
+
+}
+
+
+
+
+@keyframes stickyTransition {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
